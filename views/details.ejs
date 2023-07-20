@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/details.css">
+<div>
+    <h2 style="text-align: center;">Week View</h2>
+</div>
+
+<div class="same1" style="margin-bottom: 20px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="left" style="width: 30px;">
+    <h3 id="month-name"></h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="right" style="width: 30px;">
+</div>
+
+<div class="container rounded bg-white shadow p-3 mb-5" id="box">
+    <!-- list for habits -->
+    <div class="week-days">
+        <ul class="list-group column same" id="weekname">
+            <% for(let i=0;i<7;i++){%>
+                <li class="list-group-item day-name"></li>
+            <%}%>
+        </ul>
+        <ul class="list-group column" id="habits">
+            <%for(let i of habit_list){%>
+            <li class="list-group-item list-group-item-info habit">
+                <span id="habit-name"><h4><%= i.habitName %></h4> </span>
+                <div class="habit-streak same">     
+                    <p class="col-lg-3">Streak : <%=i.streak%>/7</p>
+                    <p class="col-lg-3"> <%=i.time%> <%=i.frequency%></p>
+                </div>
+                <!-- List to show the week days record -->
+                <ul class="list-group week-days column same1">
+                    <% const daysList = ['seven', 'six', 'five', 'four', 'three', 'two', 'one']; %>
+                    <% for (const day of daysList) { %>
+                        <form action="/details/update-habit/?id=<%= i._id %>&day=<%= day %>&val=<%= i.days[day] %>" method="POST">
+                            <button class="list-group-item days" type="submit"><%= i.days[day] %></button>
+                        </form>
+                        
+                    <% } %>
+                </ul>
+            </li>
+            <%}%>
+        </ul>
+    </div>
+</div>
+<script src="/js/details.js"></script>

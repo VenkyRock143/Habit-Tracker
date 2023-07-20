@@ -1,0 +1,32 @@
+#add-habit{
+   margin-left: 75%;
+   /* border: 2px solid black; */
+}
+
+.create-habit{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    /* border: 2px solid black; */
+    width: 25%;
+}
+.habit-list{
+    width: 70%;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#habit-name{
+    display: flex;
+    justify-content: space-between;
+
+}
+.habit-list2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.btn-change-status{
+    width: 60px;
+}

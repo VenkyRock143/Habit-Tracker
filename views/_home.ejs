@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="text-center" style="margin-top: 2%;">
+    <button type="button" class="btn btn-primary btn-block mb-4" id="add-habit">Add Habit</button>
+</div>
+<div id="container">
+    <div class="habit-list shadow ">
+        <ul class="list-group" id="habits">
+            <%for(let i of habit_list){%>
+            <li class="list-group-item list-group-item-success habit">
+                <div class="habit-info">
+                    <span id="habit-name">
+                        <h3><%= i.habitName %></h3>
+                        <form action="/details/update-habit/?id=<%=i._id%>&day=one&val=<%=i.days.one%>" method="POST" id="streak-container">
+                            <button class="btn btn-change-status" type="submit"><%=i.days.one%></button>
+                        </form>
+                        <h4><%=i.time%></h4> 
+                    </span>        
+                </div>
+                <div class="column habit-list2">
+                    <p class="col-lg-2"><%=i.best%>&nbsp best</p>
+                    <p class="col-lg-2">Streak :<%=i.streak%>/7</p>
+                    <p class="col-lg-2"> <%=i.time%> <%=i.frequency%></p>
+                    <p><a class="btn btn-danger btn-block" href="/delete-habit/?id=<%=i._id%>">Delete</a></p>
+                </div> 
+            </li>
+            <%}%>
+          </ul>
+    </div>
+    <div class="create-habit text-center bg-white shadow">
+        <form class="text-center" action="/create-habit" id="habit-form" method="POST">
+            <div class="col">
+                <div class="form-outline">
+                    <h3>Habit Name</h3>
+                    <input type="text" id="habit-name" class="form-control" placeholder="Enter Your Habit Name" name="habitName" required />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <h3>Best</h3>
+                    <input type="number" id="habit-days" class="form-control" placeholder="Enter Your Best" name="best" required />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <h3>Date</h3>
+                    <input type="date" id="habit-date" class="form-control" placeholder="Enter Date" name="date" required />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <h3>Time</h3>
+                    <input type="time" id="habit-time" class="form-control" name="time" required />
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="inputState">Frequency</label>
+                <select id="inputState" class="form-control" name="frequency">
+                    <option>Twice a Day</option>
+                    <option selected>Daily</option>
+                    <option>Weekly</option>
+                </select>
+            </div>
+            <!-- Submit button -->
+            <div style="margin-top: 5%;">
+                <button type="submit" class="btn btn-success btn-block mb-4">Create</button>
+                <button type="button" class="btn btn-danger btn-block mb-4" id="cancel-habit">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="/js/home.js"></script>

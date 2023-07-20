@@ -1,0 +1,47 @@
+
+<div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/"> <h2>Habit Tracker</h2></a>
+    <img style="height: 60px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNtMVjHFvj3uw4z3QfsaNwU5D-iNrqYeP7rI_lppzbD4cHcW0g4ASHXmck1UwFbfk7cg&usqp=CAU" alt="">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/details"><strong>Week View</strong></a>
+          </li>
+          <li class="nav-item">
+            <strong><span class="nav-link" id="time"></span></strong>
+          </li>
+      </ul>
+  </div>
+ </nav>
+</div>
+
+<!-- JavaScript code for displaying current time -->
+
+<script>
+
+  const time = document.getElementById('time');
+
+  function Time() {
+    let currentTime = new Date();
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+
+    if (hours < 10) {
+      hours = "0" + hours;
+    }
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+
+    let formattedTime = `${hours}:${minutes}:${seconds}`;
+    time.textContent = formattedTime;
+  }
+  //update time every second by passing it to setInterval
+  Time();
+  setInterval(Time, 1000);
+</script>
