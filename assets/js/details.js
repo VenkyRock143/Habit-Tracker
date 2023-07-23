@@ -1,6 +1,6 @@
 
 const weekDays = document.getElementsByClassName('day-name');
-
+//This javascript code is used to display the 7 days with there respecting week names.
 const currentDate = new Date();
 const endDate = new Date(currentDate);
 const startDate = new Date(currentDate);
