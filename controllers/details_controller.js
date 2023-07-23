@@ -1,5 +1,6 @@
 const Habit = require('../models/habits')
 
+//details controller to display the details of the habits
 module.exports.details = async function(req,res){
     try {
         const habits = await Habit.find({});
@@ -13,6 +14,7 @@ module.exports.details = async function(req,res){
     }
 } 
 
+//This code is used to updated the status of the habits
 module.exports.updateHabit = async function (req, res) {
   try {
     const id = req.query.id;
