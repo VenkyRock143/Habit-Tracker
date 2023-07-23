@@ -1,4 +1,5 @@
-
+//By default add habit form is hidden by clicking on it it change it visibility to visible 
+//Then we are able to create the habit and it contains a cancel button to cancel the form.
 const addHabitButton = document.getElementById('add-habit');
 const habitForm = document.querySelector('.create-habit');
 const cancelHabitButton = document.getElementById('cancel-habit');
@@ -11,7 +12,7 @@ cancelHabitButton.addEventListener('click', function () {
     habitForm.style.visibility = 'hidden';
 });
 
-
+//This code is used to change the status of the habit to done,not done and pending
 let days = document.getElementsByClassName('btn-change-status');
 for(let i=0;i<days.length;i++){
     days[i].style.color="white";
