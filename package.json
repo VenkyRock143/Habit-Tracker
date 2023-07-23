@@ -16,7 +16,6 @@
     "express-ejs-layouts": "^2.5.1",
     "mongoose": "^7.3.2",
     "node": "^20.4.0",
-    "nodejs": "^0.0.0",
     "nodemon": "^3.0.1"
   }
 }
