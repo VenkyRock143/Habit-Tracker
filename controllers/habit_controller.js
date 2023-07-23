@@ -31,6 +31,7 @@ module.exports.createHabit = async function(req,res){
   }
 };
 
+//controller action to delete the habit
 module.exports.deleteHabit = async function (req, res) {
   try {
     let id = req.query.id;
