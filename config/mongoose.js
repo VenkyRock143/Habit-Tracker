@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async() =>{
     try {
-        const mongoosedb = process.env.MONGODB_URI|| process.env.MONGODB_URL || 'mongodb://localhost:27017/habit_tracker';
+        const mongoosedb = process.env.MONGODB_URI || process.env.MONGODB_URL || 'mongodb://localhost:27017/habit_tracker';
         const options = {
             useNewUrlParser: true,
             useUnifiedTopology: true,
