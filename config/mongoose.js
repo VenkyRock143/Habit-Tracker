@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async() =>{
     try {
-        const mongoosedb =process.env.MONGODB_URI || 'mongodb://0.0.0.0:27017/habit_tracker';
+        const mongoosedb =mongosh "mongodb+srv://habit.qxvyvn6.mongodb.net/" --apiVersion 1 --username venkybalusani1
         const options = {
             useNewUrlParser: true,
             useUnifiedTopology: true,
