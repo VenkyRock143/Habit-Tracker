@@ -19,7 +19,7 @@
 
 const mongoose = require('mongoose');
 // connecting to mongoose
-mongoose.connect('mongodb://localhost/habit_tracker_development');
+mongoose.connect('mongodb://localhost/habit_tracker);
 // mongoose database connection
 const connectDB = mongoose.connection;
 db.on('error',console.error.bind(console,"Error connecting to MongoDb"));
