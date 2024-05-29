@@ -4,6 +4,7 @@ const port = 9000;
 const expressLayouts = require('express-ejs-layouts');
 const connectDB = require('./config/mongoose');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 //Middleware to take care of req,res of url that are encoded.
 app.use(express.urlencoded({extended:true}));
