@@ -22,11 +22,6 @@ By using this app, users can:
 - Visualize habit completion progress with a calendar view.
 - Persistent data storage using browser's local storage.
 
-## Screenshots
-
-![Habit Tracker Screenshot 1](https://raw.githubusercontent.com/VenkyRock143/Habit-Tracker/main/public/screenshot1.png)
-![Habit Tracker Screenshot 2](https://raw.githubusercontent.com/VenkyRock143/Habit-Tracker/main/public/screenshot2.png)
-
 ## Installation
 
 To run this app locally, follow these steps:
