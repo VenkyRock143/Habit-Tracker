@@ -6,6 +6,33 @@ A simple habit tracker app built with React.js. This app helps users to track th
 
 **Link:** [Habit Tracker App](https://venkyrock143.github.io/Habit-Tracker/)
 
+##Folder Structure
+
+Habit-Tracker
+│
+├── node_modules
+├── public
+│   ├── demo.gif
+│   ├── index.html
+│   ├── screenshot1.png
+│   └── screenshot2.png
+├── src
+│   ├── components
+│   │   ├── Calendar.js
+│   │   ├── HabitForm.js
+│   │   └── HabitList.js
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── reportWebVitals.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── yarn.lock
+
+
 ## Overview
 
 By using this app, users can:
