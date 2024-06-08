@@ -6,8 +6,9 @@ A simple habit tracker app built with React.js. This app helps users to track th
 
 **Link:** [Habit Tracker App](https://venkyrock143.github.io/Habit-Tracker/)
 
-##Folder Structure
+## Folder Structure
 
+```sh
 Habit-Tracker
 │
 ├── node_modules
@@ -31,6 +32,7 @@ Habit-Tracker
 ├── package.json
 ├── README.md
 └── yarn.lock
+```
 
 
 ## Overview
