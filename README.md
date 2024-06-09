@@ -12,25 +12,37 @@ A simple habit tracker app built with React.js. This app helps users to track th
 Habit-Tracker
 │
 ├── node_modules
-├── public
-│   ├── demo.gif
-│   ├── index.html
-│   ├── screenshot1.png
-│   └── screenshot2.png
-├── src
-│   ├── components
-│   │   ├── Calendar.js
-│   │   ├── HabitForm.js
-│   │   └── HabitList.js
+├── assets
+│   ├── css
+│   │   ├── details.css
+│   │   └── home.css
+│   ├── js
+│   │   ├── details.js
+│   │   └── home.js
+├── config
+│   ├── mongoose.js
 │   ├── App.css
-│   ├── App.js
-│   ├── index.css
-│   ├── index.js
-│   └── reportWebVitals.js
+│   └── App.js
+├── controllers
+│   └── habits.js
+├── models
+│   ├── mongoose.js
+│   ├── App.css
+│   └── App.js
+├── routes
+│   ├── details.js
+│   └── index.js
+├── views
+│   ├── _footer.ejs
+│   ├── _header.ejs
+│   ├── _home.ejs
+│   ├── details.ejs
+│   └── layout.ejs
 ├── .gitignore
+├── README.md
+├── index.js
 ├── package-lock.json
 ├── package.json
-├── README.md
 └── yarn.lock
 ```
 
