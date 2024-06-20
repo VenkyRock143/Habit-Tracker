@@ -4,7 +4,7 @@
 
 A simple habit tracker app built with React.js. This app helps users to track their daily habits and monitor their progress over time.
 
-**Link:** [Habit Tracker App](https://venkyrock143.github.io/Habit-Tracker/)
+**Link:** [Habit Tracker App](https://habi-tracker.onrender.com)
 
 ## Folder Structure
 
