@@ -56,13 +56,6 @@ By using this app, users can:
 - Visualize habit completion progress with a calendar view.
 - Persistent data storage using browser's local storage.
 
-## Features
-
-- Add new habits to track.
-- Mark habits as completed each day.
-- Visualize habit completion progress with a calendar view.
-- Persistent data storage using browser's local storage.
-
 ## Installation
 
 To run this app locally, follow these steps:
