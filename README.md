@@ -2,7 +2,7 @@
 
 ![Habit Tracker Demo](https://raw.githubusercontent.com/VenkyRock143/Habit-Tracker/main/public/demo.gif)
 
-A simple habit tracker app built with React.js. This app helps users to track their daily habits and monitor their progress over time.
+A simple habit tracker app built with Node.js. This app helps users to track their daily habits and monitor their progress over time.
 
 **Link:** [Habit Tracker App](https://habi-tracker.onrender.com)
 
